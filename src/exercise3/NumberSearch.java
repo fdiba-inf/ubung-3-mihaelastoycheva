@@ -13,13 +13,13 @@ public class NumberSearch {
                 System.out.printf(i+" ");
             }
         }
-        System.out.println("");
+        //System.out.println("");
         for(int i = 400; i < 700; i++){
             if(i%number1==0 && i%number2==0){
                 System.out.printf(i+" ");
             }
         }
-        System.out.println("");
+        //System.out.println("");
         for(int i = 700; i < 1000; i++){
             if(i%number1==0 && i%number2==0){
                 System.out.printf(i+" ");
