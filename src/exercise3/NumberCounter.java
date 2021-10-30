@@ -3,28 +3,34 @@ package exercise3;
 import java.util.Scanner;
 
 public class NumberCounter {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int number = input.nextInt();
-        int positive = 0;
-        int negative = 0;
-        double sum = 0;
-        double average = 0;
 
-        while(number != 0){
-            if(number > 0){
-                positive++;
-            } else{
-                negative++;
-            }
-            number = input.nextInt();
-            sum = sum + number;
-        }
-        average = sum / (positive + negative);
-        
-        System.out.println("Positive numbers: " + positive);
-        System.out.println("Negative numbers: " + negative);
-        System.out.println("Sum: " + sum);
-        System.out.println("Average: " + average);
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int positiveCount = 0;
+    int negativeCount = 0;
+    double sum = 0;
+
+    System.out.println("Enter number: ");
+    int number = input.nextInt();
+
+    while (number !=0) {
+     if (number > 0){
+       positiveCount++;
+     }else {
+       negativeCount++;
+     }
+     
+     sum = sum + number;
+     
+     number = input.nextInt();
+    
     }
+       double avarage = sum / (positiveCount + negativeCount);
+
+       System.out.println("Positive numbers: " + positiveCount);
+      System.out.println("Negative numbers: " + negativeCount);
+      System.out.println("Sum: " + sum);
+      System.out.println("Average: " + avarage);
+    }
+
 }
