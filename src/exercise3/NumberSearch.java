@@ -1,28 +1,22 @@
 package exercise3;
-
 import java.util.Scanner;
 
-public class NumberSearch {
+public class NumberSearch2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int number1 = 5;
-        int number2 = 6;
+        int counter = 0;
 
-        for(int i = 100; i < 400; i++){
-            if(i%number1==0 && i%number2==0){
-                System.out.printf(i+" ");
-            }
-        }
-        //System.out.println("");
-        for(int i = 400; i < 700; i++){
-            if(i%number1==0 && i%number2==0){
-                System.out.printf(i+" ");
-            }
-        }
-        //System.out.println("");
-        for(int i = 700; i < 1000; i++){
-            if(i%number1==0 && i%number2==0){
-                System.out.printf(i+" ");
+        for (int i = 100; i < 1000; i++){
+            if (counter < 9) {
+                if (i % 5 == 0 && i % 6 == 0) {
+                    System.out.print(i + " ");
+                    counter++;
+                }
+            } else {
+                if (i % 5 == 0 && i % 6 == 0) {
+                    System.out.println(i);
+                    counter = 0;
+                }
             }
         }
     }

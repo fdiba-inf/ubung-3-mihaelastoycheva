@@ -13,24 +13,21 @@ public class NumberCounter {
     System.out.println("Enter number: ");
     int number = input.nextInt();
 
-    while (number !=0) {
+    while (number != 0) {
      if (number > 0){
        positiveCount++;
      }else {
        negativeCount++;
      }
-     
      sum = sum + number;
-     
-     number = input.nextInt();
-    
+     number = input.nextInt(); 
     }
-       double avarage = sum / (positiveCount + negativeCount);
+    double average = sum / (positiveCount + negativeCount);
 
-       System.out.println("Positive numbers: " + positiveCount);
-      System.out.println("Negative numbers: " + negativeCount);
-      System.out.println("Sum: " + sum);
-      System.out.println("Average: " + avarage);
+    System.out.println("Positive numbers: " + positiveCount);
+    System.out.println("Negative numbers: " + negativeCount);
+    System.out.println("Sum: " + sum);
+    System.out.println("Average: " + average);
     }
 
 }
